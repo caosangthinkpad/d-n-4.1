@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <style>
+    @keyframes colorChange {
+      0% {
+        fill: #ff69b4;
+      }
+      50% {
+        fill: #ff1493;
+      }
+      100% {
+        fill: #ff69b4;
+      }
+    }
+    @keyframes heartBeat {
+      0%,
+      100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+    .moving-text {
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      animation: colorChange 2s linear infinite;
+    }
+    .heart {
+      fill: #ff1493;
+      animation: heartBeat 1s ease-in-out infinite;
+    }
+  </style>
+  <text x="10" y="50" class="moving-text">Sương xinh gái thật đẹp</text>
+  <path
+    class="heart"
+    d="M340 40 A10 10 0 0 0 330 50 A10 10 0 0 0 320 40 A10 10 0 0 0 330 30 A10 10 0 0 0 340 40 Z"
+  />
+</svg>
